@@ -1,0 +1,676 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-variant-numeric: lining-nums;
+    font-family: 'Open Sans' !important;
+}
+
+body {
+    background-color: #82ACF7;
+}
+  
+select {
+    margin-bottom: 8px;
+    border-radius: 4px;
+   
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.topside {
+    width: 100%;
+    height: 100%;
+}
+
+.bottomside {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (min-width: 320px) {
+    .img-logos {
+        width: 100%;
+        height: calc(0.555 * 100vw);
+        background-image: url('img/mobile-logo.png');
+
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    #logo {
+        width: 35%;
+        display: flex;
+        position: absolute;
+        margin: 15px 0px 0px 35px;
+    }
+    
+    #circle-invole {
+        display: flex;
+        justify-content: center;
+        margin: -70px 0 20px 0;
+      }
+    
+      #circle-into {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #022e78;
+        border-radius: 50%;
+        border: 1px solid white;
+        box-shadow: 0px 0px 0px 5px #022e78;
+        width: calc(25vw + 32px);
+        height: calc(25vw + 32px);
+      }
+    
+      #percet {
+        color: white;
+        font-size: 14vw;
+        font-family: "Open Sans", sans-serif;
+      }
+    
+      #wrapper {
+        display: flex;
+        align-items: flex-end;
+      }
+    
+      #symb {
+        display: flex;
+        color: white;
+        font-size: 6vw;
+        font-family: "Open Sans", sans-serif;
+      }
+
+    .content-top {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .description-black-white {
+        font-size: 1.4rem;
+        font-weight: 800;
+        color: #002E78;
+        text-align: center;
+        margin: -10px 50px 0px 50px;
+    }
+
+    #description-subtitle {
+        font-size: 0.95rem;
+        color: #002E78;
+        font-weight: Medium 500;
+        text-align: center;
+        margin: 5px 20px 15px 20px;
+    }
+
+    .content-bot {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .selects {
+        display: flex;
+        flex-direction: column;
+        color: #8D8C8D;
+    }
+
+    #modality, #courses, #shifts {
+        font-size: 0.7rem;
+        color: #8D8C8D;
+        font-style: italic;
+        padding: 4px;
+        border-radius: 4.5px;
+        box-shadow: 1px 1px 1px 1px #8D8C8D;
+        border-color: white;
+
+        background-image:
+        linear-gradient(45deg, transparent 50%, #002E78 50%),
+        linear-gradient(135deg, #002E78 50%, transparent 50%),
+        linear-gradient(to right, transparent, transparent);
+        background-position:
+            calc(100% - 14px) calc(1em + -2px),
+            calc(100% - 9px) calc(1em + -2px),
+            100% 0;
+        background-size:
+            5px 5px,
+            5px 5px,
+            2.5em 2.5em;
+        background-repeat: no-repeat;
+
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
+    .values {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 2rem;
+        margin-top: 5px;
+    }
+
+    .span-description {
+        font-size: 0.85rem;
+        color: #002E78;
+        font-weight: bold;
+    }
+
+    .values-span {
+        display: flex;
+        justify-content: center;
+        width: calc(8vw + 100px);
+        margin-top: 7px;
+        padding: 8.5px 0;
+        border: 2px solid #002E78;
+        border-radius: 7.2px;
+        color: #022e78;
+        font-weight: bold;
+    }
+
+    .rs {
+        font-size: 0.8rem;
+        display: flex;
+        align-items: end;
+        margin-right: 4px;
+        font-weight: bold;
+    }
+
+    .values-result {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .button-conditions {
+        display: flex;
+        text-align: start;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .subscribe {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        background-color: #3C78F5;
+        border: none;
+        width: 100%;
+        padding: 8px 0px;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 800;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .conditions {
+        font-size: 0.6rem;
+        color: white;
+        margin-top: 5px;
+    }
+
+    .svg-porcent {
+        width: 150%;
+    }
+
+    .porcent-logo {
+        position: fixed;
+        bottom: 450px;
+        left: 190px;
+        z-index: -1;
+        filter: brightness(0.6);
+    }
+}
+
+@media (min-width: 425px) {
+    #description-subtitle {
+        margin: 5px 60px 15px 60px;
+    }
+
+    .description-black-white {
+        font-size: 1.4rem;
+        margin: -10px 90px 0px 90px;
+    }
+
+    .content-bot {
+        width: calc(5vw + 300px);
+    }
+
+    .values {
+        gap: 1.8rem;
+    }
+
+    .values-span {
+        width: calc(9.2vw + 100px);
+    }
+
+    .svg-porcent {
+        width: 140%;
+    }
+
+    .porcent-logo {
+        bottom: 300px;
+        left: 190px;
+    }
+}
+
+@media (min-width: 768px) {
+    #circle-invole {
+        margin: -170px 0 20px 0;
+    }
+
+    .content-bot {
+        width: calc(5vw + 340px);
+    }
+
+    .rs {
+        font-size: 0.9rem;
+    }
+
+    .values-result {
+        font-size: 1.8rem;
+    }
+
+    .svg-porcent {
+        width: 100%;
+    }
+
+    .porcent-logo {
+        bottom: 110px;
+        left: 390px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .img-logos {
+        background-image: url('img/desktop-logo.jpeg');
+    }
+
+    #logo {
+        display: flex;
+        position: absolute;
+        width: 15%;
+        margin: 35px 0px 0px 30px;
+    }
+
+    #circle-invole {
+        margin: -390px 582px 20px 0;
+      }
+    
+      #circle-into {
+        width: calc(12vw + 32px);
+        height: calc(12vw + 32px);
+      }
+    
+      #percet {
+        color: white;
+        font-size: 7vw;
+        font-family: "Open Sans", sans-serif;
+      }
+    
+      #wrapper {
+        display: flex;
+        align-items: flex-end;
+      }
+    
+      #symb {
+        font-size: 2.5vw;
+      }
+      
+      .description-black-white {
+        text-align: start;
+        color: #F8F5FA;
+        font-size: 2.2rem;
+        margin: -380px 100px 0px 68px;
+        padding: 0px 200px 0px 250px;
+    }
+
+    #description-subtitle {
+        text-align: start;
+
+        font-size: 1.2rem;
+        color: #F8F5FA;
+        font-weight: normal;
+        margin: 5px 20px 15px 20px;
+        padding: 0px 300px 0px 300px;
+    }
+
+    #modality, #courses, #shifts {
+        font-size: 0.8rem;
+    }
+
+    .span-description {
+        font-size: 1.1rem;
+    }
+    
+    .rs {
+        font-size: 1.3rem;
+    }
+
+    .values {
+        gap: 4.4rem;
+        margin: 12px;
+    }
+
+    .values-result {
+        font-size: 2.4rem;
+    }
+
+    .values-span {
+        width: calc(11.8vw + 100px);
+        border: 3px solid #002E78;
+    }
+
+    .content-bot {
+        width: calc(18vw + 340px);
+        margin: -80px 0px 0px 130px;
+    }
+
+    .subscribe {
+        padding: 10px 0px;
+        font-size: 1.8rem;
+    }
+
+    .conditions {
+        font-size: 0.7rem;
+    }
+
+    .svg-porcent {
+        width: 100%;
+    }
+
+    .porcent-logo {
+        bottom: 330px;
+        left: 590px;
+    }
+}
+
+@media (min-width: 1440px) {
+    #circle-invole {
+        margin: -542px 870px 20px 0px;
+    }
+
+    .description-black-white {
+        font-size: 3.3rem;
+        margin: -500px 80px 0px 160px;
+        padding: 0px 310px 0px 250px;
+    }
+
+    #description-subtitle {
+        font-size: 1.5rem;
+        margin: 5px 20px 15px 115px;
+        padding: 0px 450px 0px 300px;
+    }
+
+    .content-bot {
+        width: calc(28vw + 340px);
+    }
+
+    #modality, #courses, #shifts {
+        font-size: 1rem;
+    }
+
+    .span-description {
+        font-size: 1.4rem;
+    }
+
+    .values-span {
+        width: calc(16vw + 100px);
+    }
+
+    .rs {
+        font-size: 1.6rem;
+    }
+
+    .values-result {
+        font-size: 3rem;
+    }
+
+    .values {
+        margin: 20px;
+    }
+
+    .subscribe {
+        padding: 12px 0px;
+        font-size: 2.4rem;
+    }
+
+    .conditions {
+        font-size: 0.9rem;
+    }
+
+    .svg-porcent {
+        width: 110%;
+    }
+
+    .porcent-logo {
+        bottom: 160px;
+        left: 890px;
+    }
+}
+
+@media (min-width: 1920px) {
+    #circle-invole {
+        margin: -705px 1180px 20px 0px;
+    }
+
+    #circle-into {
+        width: calc(13vw + 32px);
+        height: calc(13vw + 32px);
+    }
+
+    .description-black-white {
+        font-size: 3.8rem;
+        margin: -830px 80px 0px 275px;
+        padding: 0px 530px 0px 250px;
+    }
+
+    #description-subtitle {
+        font-size: 2rem;
+        margin: 20px 20px -70px 225px;
+        padding: 0px 580px 0px 300px;
+    }
+
+    #modality, #courses, #shifts {
+        font-size: 1.3rem;
+    }
+
+    .content-bot {
+        width: calc(34vw + 340px);
+        margin-top: -140px;
+    }
+
+    .span-description {
+        font-size: 1.7rem;
+    }
+
+    .values {
+        margin: 25px;
+    }
+
+    .values-span {
+        width: calc(18.2vw + 100px);
+        border: 4.5px solid #002E78;
+        border-radius: 12px;
+    }
+
+    .rs {
+        font-size: 2.2rem;
+        margin-right: 10px;
+
+    }
+
+    .values-result {
+        font-size: 4rem;
+    }
+
+    .subscribe {
+        font-size: 3rem;
+        padding: 15px 0px;
+        border-radius: 10px;
+    }
+
+    .conditions {
+        font-size: 1.2rem;
+    }
+
+    .svg-porcent {
+        width: 120%;
+    }
+
+    .porcent-logo {
+        bottom: -10px;
+        left: 1190px;
+    }
+}
+
+@media (min-width: 2160px) { 
+    #circle-invole {
+        margin: -820px 1400px 20px 0px;
+    }
+
+    #circle-into {
+        width: calc(14vw + 32px);
+        height: calc(14vw + 32px);
+    }
+
+    #description-subtitle {
+        font-size: 2.4rem;
+        margin: 20px 20px -100px 300px;
+        padding: 0px 665px 0px 300px;
+    }
+
+    #modality, #courses, #shifts {
+        font-size: 1.5rem;
+    }
+
+    .content-bot {
+        width: calc(36vw + 340px);
+        margin-top: -145px;
+    }
+
+    .description-black-white {
+        font-size: 4.5rem;
+        margin: -950px 80px 0px 345px;
+    }
+
+    .span-description {
+        font-size: 2rem;
+    }
+
+    .values-span {
+        width: calc(19.2vw + 100px);
+        border: 5.5px solid #002E78;
+        border-radius: 18px;
+        padding: 14.5px 0;
+    }
+
+    .values-result {
+        font-size: 5rem;
+    }
+
+    .rs {
+        font-size: 2.6rem;
+        margin-right: 15px;
+    }
+
+    .subscribe {
+        font-size: 4rem;
+        padding: 25px 0px;
+    }
+
+    .conditions {
+        font-size: 1.4rem;
+    }
+
+    .svg-porcent {
+        width: 140%;
+    }
+
+    .porcent-logo {
+        bottom: -150px;
+        left: 1290px;
+    }
+}
+
+@media (min-width: 2560px) {
+    #circle-invole {
+        margin: -965px 1585px 20px 0px;
+    }
+
+    #circle-into {
+        width: calc(15vw + 32px);
+        height: calc(15vw + 32px);
+    }
+
+    #logo {
+        width: fit-content;
+    }
+
+    .description-black-white {
+        font-size: 5rem;
+        margin: -1150px 80px 0px 485px;
+    }
+
+    #description-subtitle {
+        font-size: 2.5rem;
+        margin: 20px 20px -100px 435px;
+        padding: 0px 800px 0px 300px;
+    }
+
+    #modality, #courses, #shifts {
+        font-size: 1.8rem;
+    }
+
+    .content-bot {
+        width: calc(38vw + 340px);
+        margin: -190px -235px 0px 0px;
+    }
+
+    .span-description {
+        font-size: 2.2rem;
+    }
+
+    .values-span {
+        width: calc(20vw + 100px);
+    }
+
+    .values {
+        margin: 35px;
+    }
+
+    .rs {
+        font-size: 3rem;
+        margin-right: 20px;
+    }
+
+    .values-result {
+        font-size: 5.5rem;
+    }
+
+    .subscribe {
+        font-size: 4.5rem;
+    }
+
+    .svg-porcent {
+        width: 150%;
+    }
+
+    .porcent-logo {
+        bottom: -325px;
+        left: 1690px;
+    }
+}
