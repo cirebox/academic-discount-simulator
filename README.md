@@ -1,2 +1,3 @@
-# academic-discount-simulator
-Academic Discount Simulator
+# Academic Discount Simulator
+
+<img src="/img/example.png" alt="example"/>
